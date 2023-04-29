@@ -10,6 +10,9 @@ public class RockPaperScissors {
         // Create a new Random object to generate computer's choice.
         Random rand = new Random();
         // Initialize variables for the number of rounds, user's choice, computer's choice,
+        int numRounds;
+        int userChoice;
+        int computerChoice;
         // number of ties, number of user wins, and number of computer win's.
 
         // Prompt the user to enter the number of rounds to play.
