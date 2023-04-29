@@ -1,8 +1,11 @@
 package com.game;
 
+import java.util.Scanner;
+
 public class RockPaperScissors {
     public static void main(String[] args){
         // Create a new Scanner object to read user input.
+        Scanner input = new Scanner(System.in);
         // Create a new Random object to generate computer's choice.
         // Initialize variables for the number of rounds, user's choice, computer's choice,
         // number of ties, number of user wins, and number of computer win's.
