@@ -20,6 +20,8 @@ public class RockPaperScissors {
 
         // Prompt the user to enter the number of rounds to play.
         // Read the user's input using the Scanner object.
+        System.out.print("How many rounds would you like to play? (1-10): ");
+        numRounds = input.nextInt();
 
         // Check if the number of rounds entered by the user is valid.
         // If the number of rounds is less than 1 or greater than 10, print an error message and exit the program.
