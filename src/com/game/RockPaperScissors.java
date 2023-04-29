@@ -24,7 +24,9 @@ public class RockPaperScissors {
         numRounds = input.nextInt();
 
         // Check if the number of rounds entered by the user is valid.
-        // If the number of rounds is less than 1 or greater than 10, print an error message and exit the program.
+        if(numRounds < 1 || numRounds > 10) {
+            // If the number of rounds is less than 1 or greater than 10, print an error message and exit the program.
+        }
     }
 
 }
