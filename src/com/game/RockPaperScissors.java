@@ -14,6 +14,9 @@ public class RockPaperScissors {
         int userChoice;
         int computerChoice;
         // number of ties, number of user wins, and number of computer win's.
+        int numTies = 0;
+        int numUserWins = 0;
+        int numComputerWins = 0;
 
         // Prompt the user to enter the number of rounds to play.
         // Read the user's input using the Scanner object.
