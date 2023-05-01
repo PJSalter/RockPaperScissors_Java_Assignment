@@ -120,7 +120,11 @@ public class RockPaperScissors {
         String playAgain = input.next();
 
         // conditional from user choosing y/n
-
+        if(playAgain.equalsIgnoreCase("y")){
+            main(null);
+        } else {
+            System.out.println("Thanks for playing!");
+        }
 
     }
 
