@@ -105,8 +105,12 @@ public class RockPaperScissors {
         // Check if the number of user wins our greater than the number of computer wins. If so, it prints "Congratulations, you win!".
         if(numUserWins > numComputerWins) {
             System.out.println("Congratulations, you win!");
-            // If the number of computer wins is greater than the number of user wins, it prints "Sorry, the computer wins.".
-
+            // If the number of computer wins is greater than the number of user wins, it prints "Sorry, the computer wins."
+        } else if (numComputerWins > numUserWins) {
+            System.out.println("Sorry, the Computer wins.");
+        } else {
+            // If the number of user wins is equal to the number of computer wins, it prints "It's a tie!".
+            System.out.println("It's a tie!");
         }
 
     }
