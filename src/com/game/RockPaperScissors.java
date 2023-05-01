@@ -29,6 +29,79 @@ public class RockPaperScissors {
             System.out.print("Invalid number of rounds. Please enter a number between 1 and 10.");
             return;
         }
+
+        // Play specified number of rounds.
+        for(int i = 0; i < numRounds; i++) {
+            // ask user for choice.
+            System.out.println("Enter your choice (1=Rock, 2=Paper, 3=Scissors): ");
+            userChoice = input.nextInt();
+
+            // Generate computer choice.
+            computerChoice = rand.nextInt(3) + 1;
+
+
+            // Determine winner of round.
+            switch (userChoice) {
+                case 1:
+                    switch (computerChoice) {
+                        case 1:
+                            System.out.println("Tie!");
+                            numTies++;
+                            break;
+                        case 2:
+                            System.out.println("Computer wins!");
+                            numComputerWins++;
+                            break;
+                        case 3:
+                            System.out.println("You win!");
+                            numUserWins++;
+                            break;
+                    }
+                    break;
+                case 2:
+                    switch (computerChoice) {
+                        case 1:
+                            System.out.println("You win!");
+                            numUserWins++;
+                            break;
+                        case 2:
+                            System.out.println("Tie!");
+                            numTies++;
+                            break;
+                        case 3:
+                            System.out.println("Computer wins!");
+                            numComputerWins++;
+                            break;
+                    }
+                    break;
+                case 3:
+                    switch (computerChoice) {
+                        case 1:
+                            System.out.println("Computer wins!");
+                            numComputerWins++;
+                            break;
+                        case 2:
+                            System.out.println("You win!");
+                            numUserWins++;
+                            break;
+                        case 3:
+                            System.out.println("Tie!");
+                            numTies++;
+                            break;
+                    }
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please enter 1, 2, or 3.");
+                    i--;
+                    break;
+            }
+        }
+
+        // Print results of Game played.
+        System.out.println("Number of ties: " + numTies);
+        System.out.println("Number of User wins: " + numUserWins);
+        System.out.println("Number of Computer wins: " + numComputerWins);
+
     }
 
 }
