@@ -37,6 +37,9 @@ public class RockPaperScissors {
             userChoice = input.nextInt();
 
             // Generate computer choice.
+            computerChoice = rand.nextInt(3) + 1;
+
+
             // Determine winner of round.
         }
 
