@@ -29,6 +29,12 @@ public class RockPaperScissors {
             System.out.print("Invalid number of rounds. Please enter a number between 1 and 10.");
             return;
         }
+
+        // Play specified number of rounds.
+        // ask user for choice.
+        // Generate computer choice.
+        // Determine winner of round.
+
     }
 
 }
