@@ -57,8 +57,47 @@ public class RockPaperScissors {
                             numUserWins++;
                             break;
                     }
+                    break;
+                case 2:
+                    switch (computerChoice) {
+                        case 1:
+                            System.out.println("You win!");
+                            numUserWins++;
+                            break;
+                        case 2:
+                            System.out.println("Tie!");
+                            numTies++;
+                            break;
+                        case 3:
+                            System.out.println("Computer wins!");
+                            numComputerWins++;
+                            break;
+                    }
+                    break;
+                case 3:
+                    switch (computerChoice) {
+                        case 1:
+                            System.out.println("Computer wins!");
+                            numComputerWins++;
+                            break;
+                        case 2:
+                            System.out.println("You win!");
+                            numUserWins++;
+                            break;
+                        case 3:
+                            System.out.println("Tie!");
+                            numTies++;
+                            break;
+                    }
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please enter 1, 2, or 3.");
+                    i--;
+                    break;
             }
         }
+
+        // Print results of Game played.
 
     }
 
