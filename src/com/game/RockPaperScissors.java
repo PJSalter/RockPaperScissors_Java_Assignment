@@ -115,7 +115,12 @@ public class RockPaperScissors {
 
         // Asking the user if they want to play again
         System.out.println("Do you want to play again?(y/n): ");
+
+        // input is stored in a variable called playAgain.
         String playAgain = input.next();
+
+        // conditional from user choosing y/n
+
 
     }
 
