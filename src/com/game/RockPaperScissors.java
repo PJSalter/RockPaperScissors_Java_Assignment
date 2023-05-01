@@ -41,6 +41,23 @@ public class RockPaperScissors {
 
 
             // Determine winner of round.
+            switch (userChoice) {
+                case 1:
+                    switch (computerChoice) {
+                        case 1:
+                            System.out.println("Tie!");
+                            numTies++;
+                            break;
+                        case 2:
+                            System.out.println("Computer wins!");
+                            numComputerWins++;
+                            break;
+                        case 3:
+                            System.out.println("You win!");
+                            numUserWins++;
+                            break;
+                    }
+            }
         }
 
     }
