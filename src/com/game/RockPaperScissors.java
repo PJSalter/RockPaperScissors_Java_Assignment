@@ -102,6 +102,13 @@ public class RockPaperScissors {
         System.out.println("Number of User wins: " + numUserWins);
         System.out.println("Number of Computer wins: " + numComputerWins);
 
+        // Check if the number of user wins our greater than the number of computer wins. If so, it prints "Congratulations, you win!".
+        if(numUserWins > numComputerWins) {
+            System.out.println("Sorry, the computer wins.");
+            // If the number of computer wins is greater than the number of user wins, it prints "Sorry, the computer wins.".
+
+        }
+
     }
 
 }
