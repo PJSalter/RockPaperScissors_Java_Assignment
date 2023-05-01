@@ -31,9 +31,14 @@ public class RockPaperScissors {
         }
 
         // Play specified number of rounds.
-        // ask user for choice.
-        // Generate computer choice.
-        // Determine winner of round.
+        for(int i = 0; i < numRounds; i++) {
+            // ask user for choice.
+            System.out.println("Enter your choice (1=Rock, 2=Paper, 3=Scissors): ");
+            userChoice = input.nextInt();
+
+            // Generate computer choice.
+            // Determine winner of round.
+        }
 
     }
 
