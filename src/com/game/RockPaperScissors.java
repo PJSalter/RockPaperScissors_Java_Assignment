@@ -98,6 +98,9 @@ public class RockPaperScissors {
         }
 
         // Print results of Game played.
+        System.out.println("Number of ties: " + numTies);
+        System.out.println("Number of User wins: " + numUserWins);
+        System.out.println("Number of Computer wins: " + numComputerWins);
 
     }
 
