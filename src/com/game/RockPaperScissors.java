@@ -102,6 +102,30 @@ public class RockPaperScissors {
         System.out.println("Number of User wins: " + numUserWins);
         System.out.println("Number of Computer wins: " + numComputerWins);
 
+        // Check if the number of user wins our greater than the number of computer wins. If so, it prints "Congratulations, you win!".
+        if(numUserWins > numComputerWins) {
+            System.out.println("Congratulations, you win!");
+            // If the number of computer wins is greater than the number of user wins, it prints "Sorry, the computer wins."
+        } else if (numComputerWins > numUserWins) {
+            System.out.println("Sorry, the Computer wins.");
+        } else {
+            // If the number of user wins is equal to the number of computer wins, it prints "It's a tie!".
+            System.out.println("It's a tie!");
+        }
+
+        // Asking the user if they want to play again
+        System.out.println("Do you want to play again?(y/n): ");
+
+        // input is stored in a variable called playAgain.
+        String playAgain = input.next();
+
+        // conditional from user choosing y/n
+        if(playAgain.equalsIgnoreCase("y")){
+            main(null);
+        } else {
+            System.out.println("Thanks for playing!");
+        }
+
     }
 
 }
