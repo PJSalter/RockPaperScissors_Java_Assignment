@@ -113,6 +113,10 @@ public class RockPaperScissors {
             System.out.println("It's a tie!");
         }
 
+        // Asking the user if they want to play again
+        System.out.println("Do you want to play again?(y/n): ");
+        String playAgain = input.next();
+
     }
 
 }
